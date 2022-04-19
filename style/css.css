@@ -109,7 +109,7 @@ div > img {display:block;}
 
 .smallimgs{width:20%; height:20%; margin:auto;}
 
-.smallimages{max-width:420px;}
+.smallimages{max-width:100%;}
 
 section#fidalgo > div {margin: 75px -16px 75px -14px;
     padding: 75px 0px 75px 0px;
