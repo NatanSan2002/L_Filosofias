@@ -37,7 +37,8 @@ body{background:#C9DAEA; margin:0px; font-family: Times New Roman, Times, serif;
 
 
 header{
-    height:300px;
+    
+    padding:27px 0px 15px 0px;
     background:linear-gradient(to bottom, rgb(248, 247, 247) 40%, #66666E 60%);
     font-family: Arial, Helvetica, sans-serif;
 
@@ -177,6 +178,7 @@ header > nav {text-align: center;}
 
 
 @media (max-width: 589px){
+header{padding-bottom:30px;}
 header h1,h2{margin:15px;}
 
     header > nav > a::after{content:"";}header > nav > a::before{content:"";}
@@ -196,7 +198,7 @@ header h1,h2{margin:15px;}
     }
 
     @media (max-width:488px){
-    header{height:200px;background:linear-gradient(to bottom, rgb(248, 247, 247) 28%, #66666E 60%);}
+    header{background:linear-gradient(to bottom, rgb(248, 247, 247) 28%, #66666E 60%);}
     header > nav> a {padding:15px;}
     header {padding-top:20px;}
     header h2{font-size: 1em;}
@@ -207,8 +209,26 @@ header h1,h2{margin:15px;}
         header > nav> a {padding:15px 5px;}
     }
 
-    @media (max-width:387px){
+    @media (max-width:388px){
     main{margin:0px;}
+    section#mais > div > div {
+        margin: 10px 0px 0px auto;
+        max-width: 250px;
+        display:block;
+    }
+    }
+
+    @media (max-width:343px){
+    header{padding-bottom:2px; background:linear-gradient(to bottom, rgb(248, 247, 247) 2%, #66666E 41%);}
+    header h1{margin:4px 0px;}
+    header h2{margin:4px 0px;}
+    main{min-width:20px;}
+    section > picture > img{width:100%;}
+    picture > p {margin-left:0px;}
+    header > nav{padding:10px 0px;}
+    header > nav> a {padding:10px;display:block;margin:0px auto 6px auto; width:85%;}
+    *{margin:0px; padding:0px;}
+    
     }
 
 
