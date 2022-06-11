@@ -31,9 +31,16 @@ font-family: 'Noticia Text', serif;*/
 
 }
 
-body{background:#C9DAEA; margin:0px; font-family: Times New Roman, Times, serif;}
+html{ /*a cada 1rem sera considerado 10px */
+    font-size:62.5%; 
+}
 
-.destaque{background:#4749548c; color:white; padding:2px 4px; margin:10px 3px;}
+body{
+    background:#C9DAEA; margin:0px; font-family: Times New Roman, Times, serif;
+    font-size: 1.6rem;
+}
+
+.destaque{background:#4749548c; color:white; padding:0px 4px; margin:10px 3px;}
 
 
 header{
@@ -52,7 +59,7 @@ nav{
 
 a{color:white; text-decoration: none; font-weight:bold; }
 
-header > nav > a{font-size: 19px; margin:5px; padding:15px 5px 15px 5px; border-radius: 10px;}
+header > nav > a{font-size: 1.9rem; margin:5px; padding:15px 5px 15px 5px; border-radius: 10px;}
 
 
 header > nav > a::before{content:" | ";} header > nav > a::after{content:" | ";}
@@ -64,9 +71,10 @@ header  h1{
     margin:0px 0px 30px 0px; padding:110px 0px 0px 0px; text-align: center; font-family: var(--FontTitles1); 
     font-weight:bold;
     font-style:italic;
+    font-size: 3.8rem;
 }
 
-header  h2{text-align: center; font-size: 22px; font-family:var(--FontTitles0); color:white; font-style:italic; font-weight: 600;
+header  h2{text-align: center; font-size: 2.0rem; font-family:var(--FontTitles0); color:white; font-style:italic; font-weight: 600;
 text-shadow:2px 2px 3px rgba(0, 0, 0, 0.39); font-weight:normal;}
 
 main{
@@ -78,19 +86,19 @@ main{
 box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
 border-radius:0px 0px 10px 10px;}
 
-main > section > p {font-size: 21px;}
-main > section > div > p {font-size: 21px;}
+main > section > p {font-size: 2.1rem;}
+main > section > div > p {font-size: 2.1rem;}
 
-main p {line-height: 1.4em;}
+main p {line-height: 2.8rem;}
 
 
 
 section{background:rgba(221, 217, 217, 0.74); margin:30px 0px 150px 0px; text-indent: 20px;}
 
-section > h1{margin:0px 0px 20px 0px;font-size:2em; font-family:Arial, Helvetica, sans-serif ; font-style:italic; font-weight:bolder;}
+section > h1{margin:0px 0px 20px 0px;font-size:3.2rem; font-family:Arial, Helvetica, sans-serif ; font-style:italic; font-weight:bolder;}
 
 
-.INCTopicos{font-size:2,5em; background:#66666e; display: inline-block; 
+.INCTopicos{font-size:4.2rem; background:#66666e; display: inline-block; 
     padding:0px 20px 2px 0px;
     border:3px solid #F8F4A6;
     color:white;
@@ -102,7 +110,7 @@ section > h1{margin:0px 0px 20px 0px;font-size:2em; font-family:Arial, Helvetica
 
 section > picture > img{margin:  auto; display: block; margin-top:39px;}
 
-picture > p {margin:40px 0px 100px 50px; font-weight: lighter; font-style:italic;}
+picture > p {margin:40px 0px 100px 50px; font-weight: lighter; font-style:italic; font-size:2rem;}
 
 
 section > div > p {margin:70px 0px 70px 0px; font-family:var(--FontTexts0); font-weight:normal;}
@@ -124,7 +132,7 @@ footer{background-color:#474954;
     padding:15px 0px 0px 0px; text-align: center;
 font-family: Arial, Helvetica, sans-serif; font-weight: bolder;
 color:white; font-style:italic;
-font-size:19px;}
+font-size:1.9rem;}
 
 footer > p {margin:0px; padding:0px;}
 
@@ -140,7 +148,7 @@ section#mais > div > nav {
     margin:0px; padding:12px 0px 12px 0px;background:#eb4343; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight:500;
-    color:white; font-size:17px;
+    color:white; font-size:1.9rem;
     border-radius: 15px 15px 0px 0px;
     font-style: normal;
 
@@ -151,6 +159,7 @@ section#mais > div > nav {
      section#mais > div > p {margin:10px;}
 
      section#mais > div > div  { margin:10px 0px 5px 117px; width:250px; display: inline-block;
+        font-size: 1.8rem;
 }
 
 
@@ -212,9 +221,13 @@ header h1,h2{margin:15px;}
     @media (max-width:388px){
     main{margin:0px;}
     section#mais > div > div {
-        margin: 10px 0px 0px auto;
-        max-width: 250px;
-        display:block;
+        margin: 0px auto 0px auto;
+        padding:0px;
+        display: block;
+      width: 90%;
+    }
+    section#fidalgo > div{
+    margin-right:-7px;
     }
     }
 
@@ -227,8 +240,18 @@ header h1,h2{margin:15px;}
     picture > p {margin-left:0px;}
     header > nav{padding:10px 0px;}
     header > nav> a {padding:10px;display:block;margin:0px auto 6px auto; width:85%;}
-    *{margin:0px; padding:0px;}
+
+    html{font-size: 50%;}
     
     }
+
+    @media (max-width:230px){
+    .INCTopicos{text-indent: 0px;}
+    html{font-size:45%;}
+    }
+
+    @media (max-width:168px){
+        html{font-size:29%;}
+        }
 
 
