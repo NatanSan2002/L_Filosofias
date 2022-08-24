@@ -7,3 +7,5 @@ O tema do site é apenas ilustrativo, como você vai poder notar nenhum conteudo
 .  
 
 Créditos ao curso: Curso em video.
+
+Host: https://natansan2002.github.io/Projeto_L_Filosofias/ 
